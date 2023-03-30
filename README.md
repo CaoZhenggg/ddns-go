@@ -23,7 +23,7 @@
 
 ![image](https://user-images.githubusercontent.com/23628206/228705067-95d6e384-9f18-445f-b231-037091e3e887.png)
 
-在项目跟目录执行:
+在项目根目录执行:
 
 ```
 > go get .
