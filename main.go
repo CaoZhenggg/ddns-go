@@ -46,8 +46,9 @@ func GetEthIPv6Addr() string {
 		os.Exit(1)
 	}
 
-	eth_addr_ipv6_cidr := eth_addr[0].String()
-	return eth_addr_ipv6_cidr[:len(eth_addr_ipv6_cidr)-3]
+	eth_addr_ipv6_cidr := eth_addr[1].String()
+	eth_addr_ipv6 := strings.Split(eth_addr_ipv6_cidr, "/")[0]
+	return eth_addr_ipv6
 }
 
 func _main(args []*string) (_err error) {
